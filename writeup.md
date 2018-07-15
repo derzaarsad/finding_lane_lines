@@ -35,13 +35,13 @@ The following is an example of the final result:
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when the car drives in an extreme curved line. In this situation a straight line model is not applicable anymore.
 
-Another shortcoming could be ...
+Another shortcoming could be a line identification failure under extreme sunlight causes by lack of contrast.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to use a curved line model instead of a straight line model for the fitting algorithm.
 
-Another potential improvement could be to ...
+Another potential improvement could be to identify not only the contrast of the color but also the color itself. The reason is that lane has fix colors which are yellow or white.
