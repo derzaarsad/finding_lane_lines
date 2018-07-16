@@ -34,10 +34,12 @@ The following is an example of the final result:
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+The model fitting algorithm that is used in this project is relatively robust against extra edges added from other objects e.g. wild animal, unless the object has a long continuous line that is more dominant than the lines from the lane itself.
+Currently this project does not use any color based filtering, it means that the lane detection will work regardless of the color, however under an extreme sunlight where there is lack of contrast between the lane and the street, the lane detection can fail.
+This pipeline will not work well for cameras located in different positions in the car without any specification change. In different positions the slope of the lines are different and therefore the right and left classification cannot be done with the actual
+parameters. Moreover, by different camera positions the lane also covers a different region on the image, it means that the region of interest must be also adjusted.
 
-One potential shortcoming would be what would happen when the car drives in an extreme curved line. In this situation a straight line model is not applicable anymore.
-
-Another shortcoming could be a line identification failure under extreme sunlight causes by lack of contrast.
+One other potential shortcoming would be what would happen when the car drives in an extreme curved line. In this situation a straight line model is not applicable anymore.
 
 
 ### 3. Suggest possible improvements to your pipeline
